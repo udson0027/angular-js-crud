@@ -1,0 +1,17 @@
+.md-success:not([dusabled]):hover {
+    color: white;
+    background-color: #398439;
+}
+
+.md-success {
+    color: white;
+    background-color: #449d44;
+}
+
+.md-danger {
+    color: red;
+}
+
+.md-topbarcollor {
+    background-color: #00A5E4 !important;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Frontend challenge</title>
+
+        <!--Add Angular Material CSS-->
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="stylesheet/app.css">
+
+    </head>
+    <body ng-app="frontApp">
+        <md-toolbar layout="row" layout-padding class="md-toolbar-tools md-topbarcollor">
+            
+        </md-toolbar>
+
+        <div layout="column">
+            <div ng-view></div>
+        </div>
+
+        <!--Add AngularJS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <!--Angular mask-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ngMask/3.1.1/ngMask.min.js"></script>
+        <!--RestAngular-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/restangular/1.6.1/restangular.min.js"></script>
+        <!-- Angular Material-->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-messages.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+        <!--Angular Router-->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+        <!--Add Angular app.js-->
+        <script src="app.js"></script>
+        <!--Add Controllers-->
+        <script src="controllers/contact.js"></script>
+        <script src="controllers/contact_edit.js"></script>
+        <!--Services-->
+        <script src="services/restAPI.js"></script>
+    </body>
+</html>

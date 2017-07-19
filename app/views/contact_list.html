@@ -1,0 +1,15 @@
+<div ng-init="init()" layout="column" flex="50" flex-offset="25" layout-align="space-between stretch">
+    <div layout="row" layout-align="space-between center">
+        <h2>Lista de Contatos</h2>
+        <md-button ng-click="openAddLayout(form)" class="md-button md-success">
+            Novo
+        </md-button>
+    </div>
+    <div layout="row"
+         class="md-button"
+         layout-align="space-between center"
+         ng-repeat="contact in contacts"
+         ng-click="edit(contact.id)">
+        <md-text-float>{{ contact.name }}</md-text-float>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<md-dialog aria-label="Adicionar novo contato" flex="50">
+    <form name="contactForm" novalidate ng-submit="contactForm.$valid && save(form)">
+        <md-toolbar>
+            <div class="md-toolbar-tools md-topbarcollor">
+                <h2>Adicionar novo contato</h2>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content layout="column" layout-align="space-between stretch" layout-margin layout-padding>
+            <md-input-container>
+                <label>Nome</label>
+                <input type="text" name="nameInput" ng-model="form.name" ng-model="color" required>
+            </md-input-container>
+
+            <md-input-container>
+                <label>Email</label>
+                <input type="email" name="emailInput" ng-model="form.email" required ng-model="color" ng-pattern="/^.+@.+\..+$/">
+                <span class="md-danger" ng-show="contactForm.emailInput.$error.email">
+                    Por favor incluir um email valido!
+                </span>
+            </md-input-container>
+            <md-input-container>
+                <label>Twitter</label>
+                <input type="text" ng-model="form.twitter" ng-model="color">
+            </md-input-container>
+
+            <md-input-container>
+                <label>Telefone</label>
+                <input type="text" ng-model="form.phone" mask="(99) 99999-9999" ng-model="color">
+            </md-input-container>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button class="md-raised md-warn" ng-click="cancelDialog()">Cancelar</md-button>
+            <md-button type="submit" id="save" class="md-raised md-primary"">
+                Salvar
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
